@@ -1,0 +1,47 @@
+:root {
+    --delftBlue: #3D405B;
+    --white: #ffffff;
+    --blue: #1b9aaa;
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--delftBlue);
+    color: var(--white);
+}
+.container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.btn-wrapper {
+    display: flex;
+    justify-content: end;
+}
+.add-book-btn {
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    background-color: var(--white);
+    color: var(--delftBlue);
+    transition: .25s all;
+}
+.add-book-btn:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    scale: 1.2;
+}
+.form-area {
+    width: 25%;
+    background-color: var(--white);
+}
+.book {
+    background-color: var(--blue);
+}

@@ -9,22 +9,51 @@
 <body>
     <div class="container">
         <div class="btn-wrapper">
-            <button class="add-book-btn" type="button">+</button>
+            <button id="addBookBtn" class="add-book-btn" type="button">+</button>
         </div>
         
-        <!-- <aside class="form-area">
-            <form action="">
-    
+        <aside id="toggleForm" class="form-area d-none">
+            <button id="closeBtn" class="close-btn" type="button">x</button>
+            <form action="#">
+
+                <label for="bookName">
+                    Kitap İsmi
+                    <input type="text" id="bookName">
+                </label>
+
+                <label for="bookAuthor">
+                    Yazar
+                    <input type="text" id="bookAuthor">
+                </label>
+
+                <label for="bookPages">
+                    Sayfa Sayısı
+                    <input type="number" id="bookPages" min="0">
+                </label>
+
+                Okundu mu?
+                <div class="form-group">
+                    <label for="bookIsReadTrue">
+                        Evet
+                        <input type="radio" name="bookIsRead" id="bookIsReadTrue">
+                    </label>
+                    <label for="bookIsReadFalse">
+                        Hayır
+                        <input type="radio" name="bookIsRead" id="bookIsReadFalse">
+                    </label>
+                </div>
+
+                <button id="submitBtn" class="submit-btn" type="submit">Ekle</button>
             </form>
         </aside>
 
-        <div class="book">
+        <!-- <div class="book">
             <h2 class="book-title">Lorem ipsum dolor sit amet</h2>
             <h3 class="book-author">Lorem, ipsum dolor</h3>
             <h4 class="book-pages">150</h4>
             <h4 class="book-isRead">Okundu</h4>
-        </div>
-    </div> -->
+        </div> -->
+    </div>
     
     <script src="main.js"></script>
 </body>

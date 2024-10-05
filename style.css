@@ -13,6 +13,26 @@ body {
     background-color: var(--delftBlue);
     color: var(--white);
 }
+input[type="text"], input[type="number"] {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    border-radius: .25rem;
+    border: 1px solid var(--delftBlue);
+}
+input {
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+button {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: .25s all;
+}
+.d-none {
+    display: none;
+}
 .container {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -21,26 +41,63 @@ body {
     display: flex;
     justify-content: end;
 }
-.add-book-btn {
+.add-book-btn, .close-btn {
     font-size: 1.5rem;
-    padding: .5rem 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    background-color: var(--white);
-    color: var(--delftBlue);
-    transition: .25s all;
-}
-.add-book-btn:hover {
     background-color: var(--blue);
     color: var(--white);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .5rem 1rem;
+}
+.close-btn {
+    position: relative;
+    right: -85%;
+}
+.add-book-btn:hover, .close-btn:hover {
+    scale: 1.2;
+}
+.add-book-btn:hover {
+    background-color: var(--white);
+    color: var(--blue);
     scale: 1.2;
 }
 .form-area {
     width: 25%;
     background-color: var(--white);
+    color: var(--delftBlue);
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    padding: 1.5rem;
+}
+.form-area form {
+    height: 100%;
+}
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin: .3rem 0 1rem 0;
+    width: 75%;
+}
+.form-group label {
+    display: flex;
+    align-items: center;
+}
+.form-group input {
+    margin: 0 .5rem;
+}
+.submit-btn {
+    width: 85%;
+    color: var(--white);
+    font-size: 1.1rem;
+    background-color: var(--delftBlue);
+    position: absolute;
+    bottom: 1rem;
+    padding: .75rem 0;
+}
+.submit-btn:hover {
+    scale: 1.1;
 }
 .book {
     background-color: var(--blue);

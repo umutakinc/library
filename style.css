@@ -99,6 +99,19 @@ button {
 .submit-btn:hover {
     scale: 1.1;
 }
+.book-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
 .book {
     background-color: var(--blue);
+    padding: 1rem;
+    height: 350px;
+    border-radius: .75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.book-title {
+    margin: auto 0;
 }

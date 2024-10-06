@@ -14,32 +14,32 @@
         
         <aside id="toggleForm" class="form-area d-none">
             <button id="closeBtn" class="close-btn" type="button">x</button>
-            <form action="#">
+            <form action="#" method="get">
 
                 <label for="bookName">
                     Kitap İsmi
-                    <input type="text" id="bookName">
+                    <input type="text" id="bookName" name="bookName">
                 </label>
 
                 <label for="bookAuthor">
                     Yazar
-                    <input type="text" id="bookAuthor">
+                    <input type="text" id="bookAuthor" name="bookAuthor">
                 </label>
 
                 <label for="bookPages">
                     Sayfa Sayısı
-                    <input type="number" id="bookPages" min="0">
+                    <input type="number" id="bookPages" min="0" name="bookPages">
                 </label>
 
                 Okundu mu?
                 <div class="form-group">
                     <label for="bookIsReadTrue">
                         Evet
-                        <input type="radio" name="bookIsRead" id="bookIsReadTrue">
+                        <input type="radio" name="bookIsRead" id="bookIsReadTrue" value="true">
                     </label>
                     <label for="bookIsReadFalse">
                         Hayır
-                        <input type="radio" name="bookIsRead" id="bookIsReadFalse">
+                        <input type="radio" name="bookIsRead" id="bookIsReadFalse" value="false">
                     </label>
                 </div>
 
@@ -47,16 +47,7 @@
             </form>
         </aside>
 
-        <div class="book-container">
-            <div class="book">
-                <h2 id="bookName" class="book-title">Lorem ipsum dolor sit amet</h2>
-                <div>
-                    <h4 class="book-author">Yazar: <span id="author">Lorem, ipsum dolor</span></h4>
-                    <h4 class="book-pages">Sayfa Sayısı: <span id="pagesNumber">150</span></h4>
-                    <h4 id="isRead" class="book-isRead">Okundu</h4>
-                </div>
-            </div>
-        </div>
+        <div class="book-container"></div>
 
     </div>
     

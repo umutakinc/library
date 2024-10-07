@@ -30,6 +30,9 @@ button {
     border-radius: .25rem;
     transition: .25s all;
 }
+.overflow-hidden {
+    overflow: hidden;
+}
 .d-none {
     display: none;
 }

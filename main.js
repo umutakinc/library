@@ -6,14 +6,12 @@ const myLibrary = [];
 
 function showForm() {
     FORM.classList.remove('d-none');
+    document.querySelector('body').classList.add('overflow-hidden');
 }
 
 function hideForm() {
-    FORM.classList.forEach(el => {
-        if (el !== 'd-none') {
-            FORM.classList.add('d-none');
-        }
-    });
+    FORM.classList.add('d-none');
+    document.querySelector('body').classList.remove('overflow-hidden');
 }
 
 function getFormValues(e) {
